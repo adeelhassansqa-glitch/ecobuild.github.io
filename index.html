@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBuild Solutions - Premium Construction Lahore</title>
+    <meta name="description" content="EcoBuild Solutions - DHA Lahore's trusted construction &amp; maintenance company.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .heading { font-family: 'Playfair Display', sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(16,185,129,0.45)), 
+                        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+        
+        .service-card {
+            transition: all 0.4s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="heading text-3xl font-bold text-emerald-700">EcoBuild Solutions</span>
+            </div>
+            
+            <nav class="hidden md:flex gap-8 font-medium">
+                <a href="#home" class="hover:text-emerald-600">Home</a>
+                <a href="#about" class="hover:text-emerald-600">About Us</a>
+                <a href="#services" class="hover:text-emerald-600">Services</a>
+                <a href="#contact" class="hover:text-emerald-600">Contact</a>
+            </nav>
+            
+            <a href="https://wa.me/923052229898" target="_blank" class="bg-emerald-600 text-white px-6 py-3 rounded-2xl flex items-center gap-2 font-semibold">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="heading text-6xl md:text-7xl font-bold mb-6">Premium Construction<br>in Lahore</h1>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" 
+                    class="bg-white text-emerald-700 px-10 py-5 rounded-3xl font-semibold text-lg">Get Free Quote</button>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading text-5xl font-bold text-center mb-16">Our Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid"></div>
+        </div>
+    </section>
+
+    <!-- REQUEST A FREE QUOTE -->
+    <section id="contact" class="py-20 bg-zinc-900 text-white">
+        <div class="max-w-2xl mx-auto px-6">
+            <div class="bg-zinc-800 rounded-3xl p-12">
+                <h2 class="heading text-5xl font-bold text-center mb-10">Request a Free Quote</h2>
+                <form id="quote-form" class="space-y-6">
+                    <input type="text" id="name" placeholder="Full Name *" required class="w-full p-6 rounded-3xl bg-zinc-700 border border-zinc-600 focus:border-emerald-500">
+                    <input type="tel" id="phone" placeholder="WhatsApp Number *" required class="w-full p-6 rounded-3xl bg-zinc-700 border border-zinc-600 focus:border-emerald-500">
+                    <input type="text" id="area" placeholder="Area (e.g. DHA Phase 4, Gulberg, Bahria)" class="w-full p-6 rounded-3xl bg-zinc-700 border border-zinc-600 focus:border-emerald-500">
+                    <select id="service" required class="w-full p-6 rounded-3xl bg-zinc-700 border border-zinc-600 focus:border-emerald-500"></select>
+                    <textarea id="message" rows="4" placeholder="Project Notes / Details..." class="w-full p-6 rounded-3xl bg-zinc-700 border border-zinc-600 focus:border-emerald-500"></textarea>
+                    <button type="submit" class="w-full bg-emerald-600 py-7 rounded-3xl text-xl font-semibold flex items-center justify-center gap-3">
+                        SEND VIA WHATSAPP <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="heading text-5xl font-bold mb-8">About EcoBuild Solutions</h2>
+                <p class="text-lg text-zinc-600 leading-relaxed">
+                    Eco Build Solutions is a DHA Lahore-based premium services company delivering end-to-end construction, renovation, and property maintenance. 
+                    Founded on the principles of integrity and quality, we have completed over 500 projects across Lahore's most prestigious residential and commercial neighborhoods.<br><br>
+                    Our operations are intentionally limited to Lahore so we can maintain direct quality oversight on every engagement. Whether it is a solar installation in Bahria Town, a full renovation in Gulberg, or an electrical upgrade in DHA — our team arrives prepared, equipped, and accountable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-emerald-400 text-4xl font-medium mb-3">EcoBuild Solutions</p>
+            <p class="text-zinc-400 max-w-md mx-auto">
+                Premium construction and maintenance services in Lahore. 
+                Committed to quality, integrity, and complete client satisfaction since 2014.
+            </p>
+            
+            <div class="mt-12 grid md:grid-cols-3 gap-8 text-sm">
+                <div>
+                    <p class="text-emerald-400 font-medium">Office</p>
+                    <p class="text-zinc-400 mt-2">Plaza No.2, 2nd Floor<br>Block DD, Phase 4, DHA Lahore</p>
+                </div>
+                <div>
+                    <p class="text-emerald-400 font-medium">Contact</p>
+                    <p class="text-zinc-400 mt-2">+92 305 2229898</p>
+                    <p class="text-zinc-400">admin@ecobuildsolutions.net</p>
+                </div>
+                <div>
+                    <p class="text-emerald-400 font-medium">Service Areas</p>
+                    <p class="text-zinc-400 mt-2">DHA • Bahria Town • Gulberg • Johar Town &amp; All Lahore</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-zinc-800 mt-16 pt-8 text-xs text-zinc-500">
+                © 2026 EcoBuild Solutions. All Rights Reserved. | Built for Excellence in Lahore
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const services = [
+            { name: "Construction & Renovation", icon: "🏗️" },
+            { name: "Solar Panel Washing & Installation", icon: "☀️" },
+            { name: "AC Repairing & Maintenance", icon: "❄️" },
+            { name: "Electrical Work", icon: "⚡" },
+            { name: "Ceiling Work", icon: "🏠" },
+            { name: "Building Material Supply", icon: "📦" },
+            { name: "Plumbing Work", icon: "🔧" },
+            { name: "Generator Services", icon: "🔋" },
+            { name: "Paint Work", icon: "🎨" },
+            { name: "Furniture & Door Polishing", icon: "🪑" },
+            { name: "Security Camera Installation", icon: "📹" }
+        ];
+
+        function populateServices() {
+            const container = document.getElementById('services-grid');
+            container.innerHTML = services.map(s => `
+                <div class="service-card bg-white p-8 rounded-3xl border border-zinc-100 text-center">
+                    <div class="text-6xl mb-6">${s.icon}</div>
+                    <h3 class="font-semibold text-xl mb-4">${s.name}</h3>
+                    <button onclick="goToQuote('${s.name}')" 
+                            class="w-full bg-emerald-600 text-white py-4 rounded-2xl font-medium hover:bg-emerald-700">
+                        Get Free Quote
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function populateDropdown() {
+            const select = document.getElementById('service');
+            services.forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s.name;
+                opt.textContent = s.name;
+                select.appendChild(opt);
+            });
+        }
+
+        function goToQuote(service) {
+            document.getElementById('service').value = service;
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Updated WhatsApp Message Format
+        document.getElementById('quote-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value || 'Not provided';
+            const phone = document.getElementById('phone').value || 'Not provided';
+            const service = document.getElementById('service').value || 'Not specified';
+            const area = document.getElementById('area').value || 'Not provided';
+            const notes = document.getElementById('message').value || 'No additional notes';
+
+            const text = encodeURIComponent(
+`New Lead from Eco Build Solutions Website
+
+Name: ${name}
+WhatsApp: ${phone}
+Service Required: ${service}
+Area: ${area}
+Project Notes: ${notes}`
+            );
+
+            window.open(`https://wa.me/923052229898?text=${text}`, '_blank');
+        });
+
+        window.onload = function() {
+            populateServices();
+            populateDropdown();
+        };
+    </script>
+</body>
+</html>
